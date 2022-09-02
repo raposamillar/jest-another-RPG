@@ -45,10 +45,6 @@ test("gets player's health value", () => {
 
 });
 
-Player.prototype.getHealth = function() {
-    return `${this.name}'s health is now ${this.health}!`;
-};
-
 test('checks if player is alive or not', () => {
     const player = new Player('Dave');
 
