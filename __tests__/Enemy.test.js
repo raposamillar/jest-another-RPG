@@ -5,6 +5,7 @@ jest.mock('../lib/Potion.js');
 
 test('creates an enemy object', () => {
     const enemy = new Enemy('goblin', 'sword');
+
       expect(enemy.name).toBe('goblin');
       expect(enemy.weapon).toBe('sword');
       expect(enemy.health).toEqual(expect.any(Number));
@@ -17,7 +18,6 @@ test("gets enemy's health value", () => {
     const enemy = new Enemy('goblin', 'sword');
 
     expect(enemy.getHealth()).toEqual(expect.stringContaining(enemy.health.toString()));
-
 });
 
 test('checks if enemy is alive or not', () => {
